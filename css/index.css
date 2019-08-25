@@ -1,0 +1,83 @@
+@font-face {
+  font-family: Atletico;
+  src: url("../fonts/Atletico.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+body nav {
+  background: #000000;
+  color: #ffcd00;
+  padding: 0 40px;
+  height: 15vh;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 20% 80%;
+}
+body nav .mtuLogo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+body nav .mtuLogo img {
+  width: 80px;
+}
+body nav .mtuLogo .mtuText {
+  margin-left: 20px;
+  font-size: 1.5em;
+  font-family: Atletico;
+  display: flex;
+  flex-direction: column;
+}
+body nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+body nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffcd00;
+  padding: 10px 20px;
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 250ms ease-in-out;
+}
+body nav ul li .active {
+  background-color: white;
+}
+body nav ul li a:hover {
+  background-color: white;
+}
+body header {
+  height: 85vh;
+  background: linear-gradient(black, rgba(0, 0, 0, 0.75) 80px, rgba(0, 0, 0, 0.55)), url("http://abadi.me.mtu.edu/wp-content/uploads/2017/12/converted21-2.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffcd00;
+}
+body header h1 {
+  font-family: Atletico;
+  text-align: right;
+  font-size: 6em;
+}
+body header span {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=index.css.map */

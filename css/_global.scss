@@ -1,0 +1,15 @@
+$gold: #ffcd00;
+$black: #000000;
+$white: white;
+$atletico: Atletico;
+$openSans: 'Open Sans', sans-serif;
+
+@font-face {
+	font-family: Atletico;
+	src: url("../fonts/Atletico.otf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
