@@ -9,6 +9,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  background: #000000;
 }
 body nav {
   background: #000000;
@@ -59,25 +60,84 @@ body nav ul li a:hover {
 }
 body header {
   height: 85vh;
-  background: linear-gradient(black, rgba(0, 0, 0, 0.75) 80px, rgba(0, 0, 0, 0.55)), url("http://abadi.me.mtu.edu/wp-content/uploads/2017/12/converted21-2.jpg") no-repeat center;
+  background: linear-gradient(black, rgba(0, 0, 0, 0.75) 10vh, black) 110vh, url("../img/home-header.jpg") no-repeat center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color: #ffcd00;
 }
-body header h1 {
+body header .header-content {
+  border-left: #ffcd00 solid 5px;
+  padding-left: 20px;
+  margin-left: 15vw;
+}
+body header .header-content h1 {
   font-family: Atletico;
   text-align: right;
   font-size: 6em;
 }
-body header span {
+body header .header-content span {
   display: block;
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-size: 1.5em;
   margin-top: 20px;
+}
+body main {
+  color: #ffcd00;
+  font-family: "Open Sans", sans-serif;
+  width: 50vw;
+  margin-left: 25vw;
+  font-size: 1.25em;
+}
+body main section {
+  margin: 80px 0;
+}
+body main section h2 {
+  font-weight: bold;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 20px 0;
+  border-bottom: solid #ffcd00 1px;
+}
+body main section a {
+  color: #ffcd00;
+  font-weight: bold;
+  font-style: italic;
+  text-underline: #ffcd00;
+}
+body main section article {
+  margin: 80px 0;
+  display: grid;
+  grid-template-columns: 200px 40px auto;
+  align-items: start;
+}
+body main section article img {
+  margin-top: 6px;
+  width: 200px;
+}
+body main section article p {
+  grid-column: 3;
+}
+body .projects ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 40px;
+}
+body .projects ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .projects ul li a img {
+  width: 200px;
+}
+body .projects ul li a span {
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -5,6 +5,7 @@
 body {
 
 	font-family: $openSans;
+	background: $black;
 
 	nav {
 
@@ -88,29 +89,124 @@ body {
 
 		height: 85vh;
 		background:
-				linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.75) 80px,rgba(0,0,0,0.55)),
-				url("http://abadi.me.mtu.edu/wp-content/uploads/2017/12/converted21-2.jpg") no-repeat center;
+				linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.75) 10vh,rgba(0,0,0,1)) 110vh,
+				url("../img/home-header.jpg") no-repeat center;
 		background-size: cover;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 		color: $gold;
 
-		h1 {
+		.header-content {
 
-			font-family: $atletico;
-			text-align: right;
-			font-size: 6em;
+			border-left: $gold solid 5px;
+			padding-left: 20px;
+			margin-left: 15vw;
+
+			h1 {
+
+				font-family: $atletico;
+				text-align: right;
+				font-size: 6em;
+
+			}
+
+			span {
+				display: block;
+				font-family: $openSans;
+				font-style: italic;
+				font-size: 1.5em;
+				margin-top: 20px;
+			}
 
 		}
 
-		span {
-			display: block;
-			font-family: $openSans;
-			font-style: italic;
-			font-size: 1.5em;
-			margin-top: 20px;
+	}
+
+	main {
+
+		color: $gold;
+		font-family: $openSans;
+		width: 50vw;
+		margin-left: 25vw;
+		font-size: 1.25em;
+
+		section {
+
+			margin: 80px 0;
+
+			h2 {
+
+				font-weight: bold;
+				font-size: 2em;
+				text-transform: uppercase;
+				margin: 20px 0;
+				border-bottom: solid $gold 1px;
+
+			}
+
+			a {
+				color: $gold;
+				font-weight: bold;
+				font-style: italic;
+				text-underline: $gold;
+			}
+
+			article {
+
+				margin: 80px 0;
+				display: grid;
+				grid-template-columns: 200px 40px auto;
+				align-items: start;
+
+				img {
+					margin-top: 6px;
+					width: 200px;
+				}
+
+				p {
+					grid-column: 3
+				}
+
+			}
+
+		}
+	}
+
+	.projects {
+
+		ul {
+
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 40px;
+
+			li {
+
+				a {
+
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+
+					img {
+
+						width: 200px;
+					}
+
+					span {
+
+						text-align: center;
+
+					}
+
+				}
+
+			}
+
 		}
 
 	}
