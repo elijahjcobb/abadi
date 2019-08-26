@@ -7,137 +7,246 @@
   padding: 0;
 }
 
+a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ffcd00;
+  font-style: italic;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background: #000000;
+  scroll-behavior: smooth;
+  color: #ffcd00;
 }
 body nav {
-  background: #000000;
-  color: #ffcd00;
-  padding: 0 40px;
-  height: 15vh;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 20% 80%;
-}
-body nav .mtuLogo {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-body nav .mtuLogo img {
-  width: 80px;
-}
-body nav .mtuLogo .mtuText {
-  margin-left: 20px;
-  font-size: 1.5em;
-  font-family: Atletico;
   display: flex;
   flex-direction: column;
 }
-body nav ul {
-  list-style: none;
+body nav .mtuLogo {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
+  color: #ffcd00;
+  font-family: Atletico;
+  text-decoration: none;
+  margin: 20px 20px 0;
+  font-style: normal;
+}
+body nav .mtuLogo img {
+  width: 100px;
+  margin-right: 20px;
+}
+body nav .mtuLogo .mtuText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body nav .mtuLogo .mtuText span {
+  display: block;
+  font-size: 2.5em;
+}
+body nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 20px;
+  justify-content: space-evenly;
   align-items: center;
+}
+body nav ul li {
+  background: #ffcd00;
+  margin: 5px 0;
+  border-radius: 5px;
+  width: 40vw;
 }
 body nav ul li a {
   text-decoration: none;
   color: #000000;
-  background-color: #ffcd00;
-  padding: 10px 20px;
-  margin: 10px;
+  display: block;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
   font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 250ms ease-in-out;
 }
 body nav ul li .active {
-  background-color: white;
+  background: white;
+  border-radius: 5px;
 }
-body nav ul li a:hover {
-  background-color: white;
+@media (min-width: 1080px) {
+  body nav .mtuLogo {
+    flex-grow: 1;
+  }
+  body nav ul {
+    flex-grow: 1;
+    justify-content: space-around;
+  }
+  body nav ul li {
+    width: unset;
+  }
+  body nav ul li a {
+    padding: 10px 20px;
+    width: unset;
+    transition: background-color 250ms ease-in-out;
+  }
+  body nav ul li a:hover {
+    background-color: white;
+  }
+}
+@media (min-width: 1080px) {
+  body nav {
+    flex-direction: row;
+  }
 }
 body header {
-  height: 85vh;
+  display: flex;
   background: linear-gradient(black, rgba(0, 0, 0, 0.75) 10vh, black) 110vh, url("../img/home-header.jpg") no-repeat center;
   background-size: cover;
-  display: flex;
+  height: 60vh;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
-  color: #ffcd00;
+  justify-content: center;
 }
 body header .header-content {
-  border-left: #ffcd00 solid 5px;
+  border-left: solid #ffcd00 2px;
+  margin-left: 20px;
   padding-left: 20px;
-  margin-left: 15vw;
+  color: #ffcd00;
 }
 body header .header-content h1 {
   font-family: Atletico;
-  text-align: right;
-  font-size: 6em;
 }
 body header .header-content span {
-  display: block;
-  font-family: "Open Sans", sans-serif;
-  font-style: italic;
-  font-size: 1.5em;
-  margin-top: 20px;
+  display: none;
+}
+body header .arrow {
+  display: none;
+}
+@media (min-width: 1080px) {
+  body header .header-content {
+    margin-left: 80px;
+  }
+  body header .header-content h1 {
+    font-size: 6em;
+  }
+  body header .header-content span {
+    display: block;
+    font-style: italic;
+    font-size: 2em;
+  }
+}
+@media (min-width: 1080px) {
+  body nav {
+    height: 20vh;
+    align-items: center;
+  }
+  body header {
+    height: 80vh;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  body header .arrow {
+    display: block;
+    width: 40px;
+    align-self: flex-end;
+    justify-self: center;
+    margin-bottom: 20px;
+  }
 }
 body main {
-  color: #ffcd00;
-  font-family: "Open Sans", sans-serif;
-  width: 50vw;
-  margin-left: 25vw;
-  font-size: 1.25em;
-}
-body main section {
-  margin: 80px 0;
-}
-body main section h2 {
-  font-weight: bold;
-  font-size: 2em;
-  text-transform: uppercase;
-  margin: 20px 0;
-  border-bottom: solid #ffcd00 1px;
-}
-body main section a {
-  color: #ffcd00;
-  font-weight: bold;
-  font-style: italic;
-  text-underline: #ffcd00;
-}
-body main section article {
-  margin: 80px 0;
-  display: grid;
-  grid-template-columns: 200px 40px auto;
-  align-items: start;
-}
-body main section article img {
-  margin-top: 6px;
-  width: 200px;
-}
-body main section article p {
-  grid-column: 3;
-}
-body .projects ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 40px;
-}
-body .projects ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .projects ul li a img {
-  width: 200px;
+body main section {
+  width: 80vw;
 }
-body .projects ul li a span {
+body main section h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: solid #ffcd00 2px;
+  padding: 5px 0;
+  margin: 20px 0 10px;
+}
+body main section article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0;
+}
+body main section article img {
+  width: 60vw;
+  margin-bottom: 10px;
+  max-height: 300px;
+  object-fit: contain;
+}
+body main section article p {
   text-align: center;
+}
+@media (min-width: 1080px) {
+  body main section {
+    width: 50vw;
+    margin: 40px 0;
+  }
+  body main section h2 {
+    font-size: 3em;
+    padding: 10px 0;
+  }
+  body main section p {
+    margin-top: 20px;
+    font-size: 1.25em;
+  }
+  body main section article {
+    display: grid;
+    grid-template-columns: 200px 40px auto;
+    align-items: start;
+  }
+  body main section article img {
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  body main section article p {
+    margin-top: 0;
+    grid-column: 3;
+  }
+}
+body main .projects ul {
+  list-style: none;
+}
+body main .projects ul li {
+  margin: 20px 0;
+}
+body main .projects ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .projects ul li a img {
+  width: 60vw;
+}
+body main .projects ul li a span {
+  text-align: center;
+}
+@media (min-width: 1080px) {
+  body main .projects ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body main .projects ul li {
+    width: 30%;
+  }
+  body main .projects ul li a img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  body main .projects ul li a span {
+    margin-top: 10px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
