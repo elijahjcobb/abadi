@@ -18,7 +18,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background: #000000;
   scroll-behavior: smooth;
-  color: #ffcd00;
+  color: white;
 }
 body nav {
   display: flex;
@@ -86,6 +86,7 @@ body nav ul li .active {
     width: unset;
   }
   body nav ul li a {
+    border-radius: 5px;
     padding: 10px 20px;
     width: unset;
     transition: background-color 250ms ease-in-out;
@@ -153,6 +154,10 @@ body header .arrow {
     align-self: flex-end;
     justify-self: center;
     margin-bottom: 20px;
+    transition: transform 250ms ease-in-out;
+  }
+  body header .arrow:hover {
+    transform: scale(1.5);
   }
 }
 body main {
@@ -169,6 +174,7 @@ body main section h2 {
   border-bottom: solid #ffcd00 2px;
   padding: 5px 0;
   margin: 20px 0 10px;
+  color: #ffcd00;
 }
 body main section article {
   display: flex;
