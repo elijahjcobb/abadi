@@ -13,3 +13,20 @@ $openSans: 'Open Sans', sans-serif;
 	margin: 0;
 	padding: 0;
 }
+
+a {
+	text-decoration: underline;
+	font-weight: bold;
+	color: $gold;
+	font-style: italic;
+}
+
+
+body {
+
+	font-family: $openSans;
+	background: $black;
+	scroll-behavior: smooth;
+	color: white;
+
+}

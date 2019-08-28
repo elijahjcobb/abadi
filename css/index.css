@@ -20,11 +20,35 @@ body {
   scroll-behavior: smooth;
   color: white;
 }
-body nav {
+
+@font-face {
+  font-family: Atletico;
+  src: url("../fonts/Atletico.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ffcd00;
+  font-style: italic;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #000000;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+nav {
   display: flex;
   flex-direction: column;
 }
-body nav .mtuLogo {
+nav .mtuLogo {
   display: flex;
   color: #ffcd00;
   font-family: Atletico;
@@ -32,20 +56,20 @@ body nav .mtuLogo {
   margin: 20px 20px 0;
   font-style: normal;
 }
-body nav .mtuLogo img {
+nav .mtuLogo img {
   width: 100px;
   margin-right: 20px;
 }
-body nav .mtuLogo .mtuText {
+nav .mtuLogo .mtuText {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body nav .mtuLogo .mtuText span {
+nav .mtuLogo .mtuText span {
   display: block;
   font-size: 2.5em;
 }
-body nav ul {
+nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -54,13 +78,13 @@ body nav ul {
   justify-content: space-evenly;
   align-items: center;
 }
-body nav ul li {
+nav ul li {
   background: #ffcd00;
   margin: 5px 0;
   border-radius: 5px;
   width: 40vw;
 }
-body nav ul li a {
+nav ul li a {
   text-decoration: none;
   color: #000000;
   display: block;
@@ -70,34 +94,37 @@ body nav ul li a {
   padding: 10px 0;
   font-weight: bold;
 }
-body nav ul li .active {
+nav ul li .active {
   background: white;
   border-radius: 5px;
 }
 @media (min-width: 1080px) {
-  body nav .mtuLogo {
+  nav .mtuLogo {
     flex-grow: 1;
   }
-  body nav ul {
+  nav ul {
     flex-grow: 1;
     justify-content: space-around;
   }
-  body nav ul li {
+  nav ul li {
     width: unset;
   }
-  body nav ul li a {
+  nav ul li a {
     border-radius: 5px;
     padding: 10px 20px;
     width: unset;
     transition: background-color 250ms ease-in-out;
   }
-  body nav ul li a:hover {
+  nav ul li a:hover {
     background-color: white;
   }
 }
+
 @media (min-width: 1080px) {
-  body nav {
+  nav {
     flex-direction: row;
+    height: 20vh;
+    align-items: center;
   }
 }
 body header {
@@ -138,10 +165,6 @@ body header .arrow {
   }
 }
 @media (min-width: 1080px) {
-  body nav {
-    height: 20vh;
-    align-items: center;
-  }
   body header {
     height: 80vh;
     align-items: center;
