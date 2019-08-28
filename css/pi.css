@@ -1,0 +1,131 @@
+@font-face {
+  font-family: Atletico;
+  src: url("../fonts/Atletico.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ffcd00;
+  font-style: italic;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #000000;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+@font-face {
+  font-family: Atletico;
+  src: url("../fonts/Atletico.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ffcd00;
+  font-style: italic;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #000000;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+nav .mtuLogo {
+  display: flex;
+  color: #ffcd00;
+  font-family: Atletico;
+  text-decoration: none;
+  margin: 20px 20px 0;
+  font-style: normal;
+}
+nav .mtuLogo img {
+  width: 100px;
+  margin-right: 20px;
+}
+nav .mtuLogo .mtuText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav .mtuLogo .mtuText span {
+  display: block;
+  font-size: 2.5em;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav ul li {
+  background: #ffcd00;
+  margin: 5px 0;
+  border-radius: 5px;
+  width: 40vw;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+nav ul li .active {
+  background: white;
+  border-radius: 5px;
+}
+@media (min-width: 1080px) {
+  nav .mtuLogo {
+    flex-grow: 1;
+  }
+  nav ul {
+    flex-grow: 1;
+    justify-content: space-around;
+  }
+  nav ul li {
+    width: unset;
+  }
+  nav ul li a {
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: unset;
+    transition: background-color 250ms ease-in-out;
+  }
+  nav ul li a:hover {
+    background-color: white;
+  }
+}
+
+@media (min-width: 1080px) {
+  nav {
+    flex-direction: row;
+    height: 20vh;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=pi.css.map */
