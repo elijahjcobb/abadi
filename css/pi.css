@@ -127,5 +127,49 @@ nav ul li .active {
     align-items: center;
   }
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container main {
+  width: 80vw;
+}
+
+li {
+  margin: 4px 0 4px 40px;
+}
+
+h2, h3 {
+  font-family: Atletico;
+  color: #ffcd00;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 40px 0;
+}
+
+h3 {
+  margin: 40px 0 10px;
+}
+
+@media (min-width: 1080px) {
+  main {
+    width: 60vw;
+  }
+  main li {
+    font-size: 1.25em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+}
 
 /*# sourceMappingURL=pi.css.map */
