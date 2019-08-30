@@ -1,0 +1,160 @@
+@import "./_global.scss";
+@import "./_nav.scss";
+
+main {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.container {
+
+		width: 80vw;
+
+		section {
+
+			margin: 40px 0;
+
+			h2 {
+
+				font-family: $atletico;
+				color: $gold;
+				border-bottom: solid $gold 4px;
+				padding-bottom: 5px;
+
+			}
+
+			.subtitle {
+
+				margin: 10px 0;
+
+			}
+
+			article {
+
+				margin: 40px 0;
+				display: flex;
+				flex-direction: column;
+
+				h3 {
+
+					color: $gold;
+					margin-bottom: 10px;
+
+				}
+
+				p {
+
+
+
+				}
+
+				img {
+
+					width: 80%;
+					align-self: center;
+					margin: 20px 0;
+
+				}
+
+				.paper {
+
+					display: flex;
+					flex-direction: column;
+					margin: 20px 0;
+
+					span {
+
+						display: block;
+
+					}
+
+					a {
+
+						display: block;
+
+					}
+
+				}
+
+			}
+
+
+		}
+
+	}
+
+}
+
+
+@media (min-width: 1080px) {
+
+	main {
+
+		.container {
+
+			width: 60vw;
+
+			section {
+
+				h2 {
+
+					font-size: 3em;
+
+				}
+
+				.subtitle {
+
+					font-size: 1.25em;
+
+				}
+
+				article {
+
+					border-bottom: solid $gold 4px;
+					padding-bottom: 20px;
+
+					h3 {
+
+						font-size: 2em;
+
+					}
+
+					p {
+
+						font-size: 1.25em;
+
+					}
+
+					img {
+
+						width: 60%;
+
+					}
+
+					.paper {
+
+						span {
+
+
+
+						}
+
+						a {
+
+
+
+						}
+
+					}
+
+				}
+
+
+			}
+
+		}
+
+	}
+
+}
