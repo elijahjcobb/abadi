@@ -167,17 +167,20 @@ body header .arrow {
 @media (min-width: 1080px) {
   body header {
     height: 80vh;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  body header .header-content {
+    margin: 20vh;
   }
   body header .arrow {
-    display: block;
+    display: flex;
     width: 40px;
-    align-self: flex-end;
-    justify-self: center;
-    margin-bottom: 20px;
+    align-self: center;
+    justify-self: flex-end;
     transition: transform 250ms ease-in-out;
+    margin-bottom: 40px;
   }
   body header .arrow:hover {
     transform: scale(1.5);

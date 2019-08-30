@@ -74,18 +74,24 @@ body {
 		header {
 
 			height: 80vh;
-			align-items: center;
-			flex-direction: row;
-			justify-content: flex-start;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: flex-start;
+
+			.header-content {
+
+				margin: 20vh;
+
+			}
 
 			.arrow {
 
-				display: block;
+				display: flex;
 				width: 40px;
-				align-self: flex-end;
-				justify-self: center;
-				margin-bottom: 20px;
+				align-self: center;
+				justify-self: flex-end;
 				transition: transform 250ms ease-in-out;
+				margin-bottom: 40px;
 
 			}
 
