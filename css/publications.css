@@ -136,62 +136,69 @@ main .container {
   width: 80vw;
 }
 main .container section {
-  margin: 40px 0;
+  margin: 60px 0;
 }
 main .container section h2 {
-  font-family: Atletico;
   color: #ffcd00;
-  border-bottom: solid #ffcd00 4px;
-  padding-bottom: 5px;
-}
-main .container section .subtitle {
-  margin: 10px 0;
+  font-family: Atletico;
 }
 main .container section article {
   margin: 40px 0;
   display: flex;
   flex-direction: column;
 }
-main .container section article h3 {
+main .container section article .left {
+  margin: 10px 0;
+}
+main .container section article .left .title {
+  display: block;
   color: #ffcd00;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  text-transform: capitalize;
 }
-main .container section article img {
-  width: 80%;
+main .container section article .left .author {
+  display: block;
+}
+main .container section article .link {
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+  color: #000000;
+  background: #ffcd00;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  width: 50%;
   align-self: center;
-  margin: 20px 0;
-}
-main .container section article .paper {
-  display: flex;
-  flex-direction: column;
-  margin: 20px 0;
-}
-main .container section article .paper span {
-  display: block;
-}
-main .container section article .paper a {
-  display: block;
 }
 
 @media (min-width: 1080px) {
   main .container {
-    width: 60vw;
+    width: 80vw;
   }
   main .container section h2 {
     font-size: 3em;
   }
-  main .container section .subtitle {
+  main .container section article {
+    display: grid;
+    grid-template-columns: auto 220px;
+    margin: 80px 0;
+  }
+  main .container section article .left {
+    margin: 0 20px;
+  }
+  main .container section article .left .title {
+    font-size: 1.75em;
+  }
+  main .container section article .left .author {
     font-size: 1.25em;
   }
-  main .container section article h3 {
-    font-size: 2em;
+  main .container section article .link {
+    transition: transform 250ms ease-in-out;
   }
-  main .container section article p {
-    font-size: 1.25em;
-  }
-  main .container section article img {
-    width: 60%;
+  main .container section article .link:hover {
+    transform: scale(1.1);
   }
 }
 
-/*# sourceMappingURL=research.css.map */
+/*# sourceMappingURL=publications.css.map */

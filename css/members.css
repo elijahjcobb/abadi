@@ -189,6 +189,9 @@ main .container section .member .memberTop .content .contact span {
   main .container section h2 {
     font-size: 3em;
   }
+  main .container section .member {
+    margin: 100px 0;
+  }
   main .container section .member .memberTop .profileImg {
     width: 30%;
   }

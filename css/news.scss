@@ -1,0 +1,95 @@
+@import "./_global.scss";
+@import "./_nav.scss";
+
+main {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.container {
+
+		width: 80vw;
+
+		article {
+
+			margin: 40px 0;
+			display: flex;
+			flex-direction: column;
+			border-bottom: solid $gold 4px;
+
+			.title {
+
+				font-family: $atletico;
+				color: $gold;
+				margin-bottom: 8px;
+
+			}
+
+			.date {
+
+				color: $gold;
+
+			}
+
+			.content {
+
+				margin: 16px 0;
+
+			}
+
+			img {
+
+				width: 100%;
+				align-self: center;
+				margin-bottom: 40px;
+
+			}
+
+		}
+
+	}
+
+}
+
+@media (min-width: 1080px) {
+
+	main {
+
+		.container {
+
+			width: 40vw;
+
+			article {
+
+				.title {
+
+					font-size: 2em;
+
+				}
+
+				.date {
+
+					font-size: 1.5em;
+
+				}
+
+				.content {
+
+					font-size: 1.25em;
+
+				}
+
+				img {
+
+
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
