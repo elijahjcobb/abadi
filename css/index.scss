@@ -7,7 +7,8 @@ body {
 
 		display: flex;
 		background:
-				linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.75) 10vh,rgba(0,0,0,1)) 110vh,
+				//linear-gradient(rgba(255,0,0,1) 10%, rgba(0,0,255,0.5) 20%,rgba(0,255,0,1)) 90%,
+				radial-gradient(circle, rgba(0,0,0,0.5), rgba(0,0,0,0.75), rgba(0,0,0,1)),
 				url("../img/home-header.jpg") no-repeat center;
 		background-size: cover;
 		height: 60vh;

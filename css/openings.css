@@ -47,6 +47,10 @@ body {
 nav {
   display: flex;
   flex-direction: column;
+  position: sticky;
+  top: 0;
+  background: #000000;
+  box-shadow: 0px 20px 20px black;
 }
 nav .mtuLogo {
   display: flex;

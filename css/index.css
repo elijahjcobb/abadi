@@ -47,6 +47,10 @@ body {
 nav {
   display: flex;
   flex-direction: column;
+  position: sticky;
+  top: 0;
+  background: #000000;
+  box-shadow: 0px 20px 20px black;
 }
 nav .mtuLogo {
   display: flex;
@@ -129,7 +133,7 @@ nav ul li .active {
 }
 body header {
   display: flex;
-  background: linear-gradient(black, rgba(0, 0, 0, 0.75) 10vh, black) 110vh, url("../img/home-header.jpg") no-repeat center;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75), black), url("../img/home-header.jpg") no-repeat center;
   background-size: cover;
   height: 60vh;
   flex-direction: column;

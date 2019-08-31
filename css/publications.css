@@ -47,6 +47,10 @@ body {
 nav {
   display: flex;
   flex-direction: column;
+  position: sticky;
+  top: 0;
+  background: #000000;
+  box-shadow: 0px 20px 20px black;
 }
 nav .mtuLogo {
   display: flex;
@@ -174,7 +178,7 @@ main .container section article .link {
 
 @media (min-width: 1080px) {
   main .container {
-    width: 80vw;
+    width: 60vw;
   }
   main .container section h2 {
     font-size: 3em;
