@@ -59,12 +59,16 @@ nav .mtuLogo {
   text-decoration: none;
   margin: 20px 20px 0;
   font-style: normal;
+  align-items: center;
+  flex-direction: column;
 }
 nav .mtuLogo img {
   width: 300px;
-  margin: 0 40px;
+  align-self: center;
+  justify-self: center;
   max-height: 200px;
   object-fit: contain;
+  display: block;
 }
 nav .mtuLogo .mtuText {
   display: flex;
@@ -155,7 +159,7 @@ main .container section .member {
 main .container section .member .memberTop .profileImg {
   width: 40%;
   max-height: 30vh;
-  object-fit: contain;
+  object-fit: cover;
   margin-bottom: 20px;
 }
 main .container section .member .memberTop .content h3 {
