@@ -52,6 +52,8 @@ main {
 				img {
 
 					width: 80%;
+					max-height: 40vh;
+					object-fit: contain;
 					align-self: center;
 					margin: 20px 0;
 

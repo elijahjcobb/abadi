@@ -164,6 +164,8 @@ main .container section article h3 {
 }
 main .container section article img {
   width: 80%;
+  max-height: 40vh;
+  object-fit: contain;
   align-self: center;
   margin: 20px 0;
 }

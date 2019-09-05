@@ -32,6 +32,8 @@ main {
 					.profileImg {
 
 						width: 40%;
+						max-height: 30vh;
+						object-fit: contain;
 						margin-bottom: 20px;
 
 					}
