@@ -61,8 +61,10 @@ nav .mtuLogo {
   font-style: normal;
 }
 nav .mtuLogo img {
-  width: 100px;
-  margin-right: 20px;
+  width: 300px;
+  margin: 0 40px;
+  max-height: 200px;
+  object-fit: contain;
 }
 nav .mtuLogo .mtuText {
   display: flex;
@@ -131,13 +133,13 @@ nav ul li .active {
     align-items: center;
   }
 }
-.container {
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
-.container main {
+main .container {
   width: 80vw;
 }
 
@@ -160,18 +162,16 @@ h3 {
 }
 
 @media (min-width: 1080px) {
-  main {
+  main .container {
     width: 60vw;
   }
-  main li, main p {
+  main .container li, main .container p {
     font-size: 18px;
   }
-
-  h2 {
+  main h2 {
     font-size: 3em;
   }
-
-  h3 {
+  main h3 {
     font-size: 2em;
   }
 }

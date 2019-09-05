@@ -116,13 +116,14 @@ main {
 
 					.link {
 
-						transition: transform 250ms ease-in-out;
+						transition: transform 250ms ease-in-out, background 250ms ease-in-out;
 
 					}
 
 					.link:hover {
 
 						transform: scale(1.1);
+						background: white;
 
 					}
 

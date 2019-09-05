@@ -1,17 +1,16 @@
 @import "./_global.scss";
 @import "./_nav.scss";
 
-.container {
+main {
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
 
-	main {
+	.container {
 
 		width: 80vw;
-		
 
 	}
 
@@ -40,25 +39,29 @@ h3 {
 
 	main {
 
-		width: 60vw;
+		.container {
 
-		li, p {
+			width: 60vw;
 
-			font-size: 18px;
+			li, p {
+
+				font-size: 18px;
+
+			}
 
 		}
 
-	}
+		h2 {
 
-	h2 {
+			font-size: 3em;
 
-		font-size: 3em;
+		}
 
-	}
+		h3 {
 
-	h3 {
+			font-size: 2em;
 
-		font-size: 2em;
+		}
 
 	}
 

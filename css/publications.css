@@ -61,8 +61,10 @@ nav .mtuLogo {
   font-style: normal;
 }
 nav .mtuLogo img {
-  width: 100px;
-  margin-right: 20px;
+  width: 300px;
+  margin: 0 40px;
+  max-height: 200px;
+  object-fit: contain;
 }
 nav .mtuLogo .mtuText {
   display: flex;
@@ -198,10 +200,11 @@ main .container section article .link {
     font-size: 1.25em;
   }
   main .container section article .link {
-    transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out, background 250ms ease-in-out;
   }
   main .container section article .link:hover {
     transform: scale(1.1);
+    background: white;
   }
 }
 

@@ -61,8 +61,10 @@ nav .mtuLogo {
   font-style: normal;
 }
 nav .mtuLogo img {
-  width: 100px;
-  margin-right: 20px;
+  width: 300px;
+  margin: 0 40px;
+  max-height: 200px;
+  object-fit: contain;
 }
 nav .mtuLogo .mtuText {
   display: flex;

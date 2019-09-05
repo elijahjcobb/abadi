@@ -3,6 +3,8 @@
 
 body {
 
+	scroll-behavior: smooth;
+
 	header {
 
 		display: flex;
@@ -87,20 +89,20 @@ body {
 
 			.arrow {
 
-				display: flex;
-				width: 40px;
-				align-self: center;
-				justify-self: flex-end;
-				transition: transform 250ms ease-in-out;
-				margin-bottom: 40px;
+				//display: flex;
+				//width: 40px;
+				//align-self: center;
+				//justify-self: flex-end;
+				//transition: transform 250ms ease-in-out;
+				//margin-bottom: 40px;
 
 			}
 
-			.arrow:hover {
-
-				transform: scale(1.5);
-
-			}
+			//.arrow:hover {
+			//
+			//	transform: scale(1.5);
+			//
+			//}
 
 		}
 
@@ -111,6 +113,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		box-shadow: 0 -8px 20px black;
 
 		section {
 
@@ -127,12 +130,19 @@ body {
 
 			}
 
+			p {
+
+				letter-spacing: 1.125px;
+				line-height: 1.5;
+
+			}
+
 			article {
 
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				margin: 80px 0;
+				margin: 80px 0 80px 20px;
 
 				img {
 					width: 60vw;
@@ -142,7 +152,8 @@ body {
 				}
 
 				p {
-					text-align: center;
+					text-align: left;
+
 				}
 
 			}
@@ -223,6 +234,8 @@ body {
 						span {
 
 							text-align: center;
+							letter-spacing: 1.125px;
+							line-height: 1.5;
 
 						}
 
@@ -257,6 +270,8 @@ body {
 							span {
 
 								margin-top: 10px;
+								letter-spacing: 1.125px;
+								line-height: 1.5;
 
 							}
 
