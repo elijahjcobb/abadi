@@ -111,10 +111,12 @@ nav ul li .active {
 @media (min-width: 1080px) {
   nav .mtuLogo {
     flex-grow: 1;
+    max-width: 300px;
   }
   nav ul {
     flex-grow: 1;
     justify-content: space-around;
+    max-width: 1000px;
   }
   nav ul li {
     width: unset;
@@ -135,6 +137,7 @@ nav ul li .active {
     flex-direction: row;
     height: 20vh;
     align-items: center;
+    justify-content: space-around;
   }
 }
 main {
@@ -165,6 +168,9 @@ main .container section article {
 main .container section article h3 {
   color: #ffcd00;
   margin-bottom: 10px;
+}
+main .container section article p {
+  text-align: justify;
 }
 main .container section article img {
   width: 80%;

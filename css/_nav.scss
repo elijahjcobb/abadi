@@ -97,6 +97,7 @@ nav {
 		.mtuLogo {
 
 			flex-grow: 1;
+			max-width: 300px;
 
 		}
 
@@ -104,6 +105,7 @@ nav {
 
 			flex-grow: 1;
 			justify-content: space-around;
+			max-width: 1000px;
 
 			li {
 
@@ -139,6 +141,7 @@ nav {
 		flex-direction: row;
 		height: 20vh;
 		align-items: center;
+		justify-content: space-around;
 
 	}
 
