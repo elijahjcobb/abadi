@@ -50,7 +50,7 @@ nav {
   position: sticky;
   top: 0;
   background: #000000;
-  box-shadow: 0px 20px 20px black;
+  transition: opacity 500ms ease-in-out;
 }
 nav .mtuLogo {
   display: flex;
