@@ -8,16 +8,25 @@ body {
 	header {
 
 		display: flex;
-		background:
-				//linear-gradient(rgba(255,0,0,1) 10%, rgba(0,0,255,0.5) 20%,rgba(0,255,0,1)) 90%,
-				radial-gradient(circle, rgba(0,0,0,0.5), rgba(0,0,0,0.75), rgba(0,0,0,1)),
-				url("../img/home-header.jpg") no-repeat center;
-		background-size: auto;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
 		height: 60vh;
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: center;
 		transition: opacity 500ms ease-in-out;
+		opacity: 0;
+
+		.gradient-item {
+			position: absolute;
+			top: 240px;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 4;
+			background: linear-gradient(rgba(1,1,1,0.5), rgba(1,1,1,0.75));
+		}
 
 		.header-content {
 
@@ -25,6 +34,7 @@ body {
 			margin-left: 20px;
 			padding-left: 20px;
 			color: $gold;
+			z-index: 5;
 
 			h1 {
 
@@ -91,20 +101,21 @@ body {
 
 			.arrow {
 
-				//display: flex;
-				//width: 40px;
-				//align-self: center;
-				//justify-self: flex-end;
-				//transition: transform 250ms ease-in-out;
-				//margin-bottom: 40px;
+				display: flex;
+				width: 60px;
+				align-self: center;
+				justify-self: flex-end;
+				transition: transform 250ms ease-in-out;
+				margin-bottom: 10px;
+				z-index: 8;
 
 			}
 
-			//.arrow:hover {
-			//
-			//	transform: scale(1.5);
-			//
-			//}
+			.arrow:hover {
+
+				transform: scale(1.5);
+
+			}
 
 		}
 
@@ -115,7 +126,6 @@ body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		box-shadow: 0 -8px 20px black;
 
 		section {
 

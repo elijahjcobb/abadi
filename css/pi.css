@@ -51,6 +51,7 @@ nav {
   top: 0;
   background: #000000;
   transition: opacity 500ms ease-in-out;
+  z-index: 1000000;
 }
 nav .mtuLogo {
   display: flex;

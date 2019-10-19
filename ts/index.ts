@@ -26,12 +26,6 @@ let titles: string[] = [
 let backgroundImage: HTMLElement | null = document.getElementById("backgroundImage");
 let titleLabel: HTMLElement | null = document.getElementById("subtitleLabel");
 
-function getCSSForImageUrl(imageUrl: string): string {
-
-	return `radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75), black), url("${imageUrl}") no-repeat center`;
-
-}
-
 let imageIndex: number = Math.floor(Math.random() * imageUrls.length) - 1;
 if (imageIndex < 0) imageIndex = 0;
 
@@ -41,7 +35,6 @@ if (titleIndex < 0) titleIndex = 0;
 function cycleBackgroundView(): void {
 
 	const imageUrl = imageUrls[imageIndex];
-	const imageCSS = getCSSForImageUrl(imageUrl);
 	if (backgroundImage == null) return;
 	backgroundImage.style.opacity = "0";
 
@@ -51,10 +44,10 @@ function cycleBackgroundView(): void {
 	setTimeout(() => {
 
 		if (backgroundImage == null) return;
-		backgroundImage.style.background = imageCSS;
+		backgroundImage.style.backgroundImage = `url("${imageUrl}")`;
 
 		if (titleLabel == null) return;
-		titleLabel.innerHTML = titles[titleIndex];
+		titleLabel.innerText = titles[titleIndex];
 
 		setTimeout(() => {
 

@@ -9,6 +9,7 @@ nav {
 	background: $black;
 	//box-shadow: 0px 20px 20px black;
 	transition: opacity 500ms ease-in-out;
+	z-index: 1000000;
 
 	.mtuLogo {
 
