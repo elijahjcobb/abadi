@@ -1,0 +1,104 @@
+@import "./_global.scss";
+@import "./_nav.scss";
+
+.container {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 0 20px;
+
+	.map {
+		border: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.info {
+		align-self: flex-start;
+		justify-self: flex-start;
+		width: 100%;
+	}
+
+	.contactItems {
+
+		display: flex;
+		flex-wrap: wrap;
+		margin: 20px 0;
+
+	}
+
+	.contact {
+
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		text-decoration: none;
+		border: solid $gold 3px;
+		border-radius: 5px;
+		padding: 5px 10px;
+		margin: 10px;
+
+		img {
+
+			display: block;
+			height: 40px;
+			width: 40px;
+
+		}
+
+		span {
+
+			display: block;
+			margin-left: 10px;
+			font-style: normal;
+			color: $gold;
+			font-weight: bold;
+			text-decoration: none;
+
+		}
+
+	}
+
+}
+
+@media (min-width: 1080px) {
+
+	.container {
+		flex-direction: row;
+		margin: 40px;
+		justify-content: center;
+		align-items: center;
+
+		.map {
+			margin-left: 80px;
+			margin-right: 40px;
+			height: 60vh;
+			max-height: 800px;
+		}
+	}
+
+	.contactItems {
+		flex-direction: column;
+	}
+
+	.contact {
+		width: 40%;
+		max-width: 400px;
+	}
+
+	a.contact {
+
+		transition: transform 250ms ease-in-out;
+		cursor: pointer;
+
+	}
+
+	a.contact:hover {
+
+		transform: scale(1.1);
+
+	}
+
+}

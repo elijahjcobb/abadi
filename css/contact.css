@@ -1,3 +1,223 @@
+@font-face {
+  font-family: Atletico;
+  src: url("../fonts/Atletico.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
 
+a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ffcd00;
+  font-style: italic;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #000000;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+@font-face {
+  font-family: Atletico;
+  src: url("../fonts/Atletico.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ffcd00;
+  font-style: italic;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #000000;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  background: #000000;
+  transition: opacity 500ms ease-in-out;
+  z-index: 1000000;
+}
+nav .mtuLogo {
+  display: flex;
+  color: #ffcd00;
+  font-family: Atletico;
+  text-decoration: none;
+  margin: 20px 20px 0;
+  font-style: normal;
+  align-items: center;
+  flex-direction: column;
+}
+nav .mtuLogo img {
+  width: 300px;
+  align-self: center;
+  justify-self: center;
+  max-height: 200px;
+  object-fit: contain;
+  display: block;
+}
+nav .mtuLogo .mtuText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav .mtuLogo .mtuText span {
+  display: block;
+  font-size: 2.5em;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav ul li {
+  background: #ffcd00;
+  margin: 5px 0;
+  border-radius: 5px;
+  width: 40vw;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+nav ul li .active {
+  background: white;
+  border-radius: 5px;
+}
+@media (min-width: 1080px) {
+  nav .mtuLogo {
+    flex-grow: 1;
+    max-width: 300px;
+  }
+  nav ul {
+    flex-grow: 1;
+    justify-content: space-around;
+    max-width: 1000px;
+  }
+  nav ul li {
+    width: unset;
+  }
+  nav ul li a {
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: unset;
+    transition: background-color 250ms ease-in-out;
+  }
+  nav ul li a:hover {
+    background-color: white;
+  }
+}
+
+@media (min-width: 1080px) {
+  nav {
+    flex-direction: row;
+    height: 20vh;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 20px;
+}
+.container .map {
+  border: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.container .info {
+  align-self: flex-start;
+  justify-self: flex-start;
+  width: 100%;
+}
+.container .contactItems {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.container .contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  border: solid #ffcd00 3px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 10px;
+}
+.container .contact img {
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+.container .contact span {
+  display: block;
+  margin-left: 10px;
+  font-style: normal;
+  color: #ffcd00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (min-width: 1080px) {
+  .container {
+    flex-direction: row;
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .map {
+    margin-left: 80px;
+    margin-right: 40px;
+    height: 60vh;
+    max-height: 800px;
+  }
+
+  .contactItems {
+    flex-direction: column;
+  }
+
+  .contact {
+    width: 40%;
+    max-width: 400px;
+  }
+
+  a.contact {
+    transition: transform 250ms ease-in-out;
+    cursor: pointer;
+  }
+
+  a.contact:hover {
+    transform: scale(1.1);
+  }
+}
 
 /*# sourceMappingURL=contact.css.map */
