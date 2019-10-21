@@ -161,6 +161,10 @@ main .container section article {
   display: flex;
   flex-direction: column;
 }
+main .container section article .paperImg {
+  object-fit: contain;
+  display: block;
+}
 main .container section article .left {
   margin: 10px 0;
 }
@@ -188,18 +192,23 @@ main .container section article .link {
 
 @media (min-width: 1080px) {
   main .container {
-    width: 60vw;
+    width: 80vw;
   }
   main .container section h2 {
     font-size: 3em;
   }
   main .container section article {
     display: grid;
-    grid-template-columns: auto 220px;
+    grid-template-columns: 140px auto 220px;
     margin: 80px 0;
   }
+  main .container section article .paperImg {
+    width: 140px;
+    margin-top: 10px;
+    background-color: black;
+  }
   main .container section article .left {
-    margin: 0 20px;
+    margin: 0 40px;
   }
   main .container section article .left .title {
     font-size: 1.75em;
@@ -213,6 +222,11 @@ main .container section article .link {
   main .container section article .link:hover {
     transform: scale(1.1);
     background: white;
+  }
+}
+@media (min-width: 1400px) {
+  main .container {
+    width: 60vw;
   }
 }
 
