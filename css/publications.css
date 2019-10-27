@@ -192,20 +192,21 @@ main .container section article .link {
 
 @media (min-width: 1080px) {
   main .container {
-    width: 80vw;
+    width: 90vw;
   }
   main .container section h2 {
     font-size: 3em;
   }
   main .container section article {
+    width: 100%;
     display: grid;
-    grid-template-columns: 140px auto 220px;
+    grid-template-columns: 20vw auto 140px;
     margin: 80px 0;
   }
   main .container section article .paperImg {
-    width: 140px;
+    width: 20vw;
+    max-height: 40vh;
     margin-top: 10px;
-    background-color: black;
   }
   main .container section article .left {
     margin: 0 40px;
