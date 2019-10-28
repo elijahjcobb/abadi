@@ -188,6 +188,7 @@ main .container section article .link {
   border-radius: 5px;
   width: 50%;
   align-self: center;
+  margin-top: 40px;
 }
 
 @media (min-width: 1080px) {
