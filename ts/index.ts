@@ -7,13 +7,20 @@
  */
 
 let imageUrls: string[] = [
-	"http://abadi.me.mtu.edu/wp-content/uploads/2017/12/photoshopped.jpg",
-	"http://abadi.me.mtu.edu/wp-content/uploads/2017/12/converted21-2.jpg",
-	"http://abadi.me.mtu.edu/wp-content/uploads/2019/08/IMG_5946.jpg",
-	"http://abadi.me.mtu.edu/wp-content/uploads/2017/12/converted21-1.jpg",
-	"https://unsplash.com/photos/lQGJCMY5qcM/download?force=true",
-	"https://unsplash.com/photos/pwcKF7L4-no/download?force=true",
-	"https://unsplash.com/photos/gKUC4TMhOiY/download?force=true"
+	// "http://abadi.me.mtu.edu/wp-content/uploads/2017/12/photoshopped.jpg",
+	// "http://abadi.me.mtu.edu/wp-content/uploads/2017/12/converted21-2.jpg",
+	// "http://abadi.me.mtu.edu/wp-content/uploads/2019/08/IMG_5946.jpg",
+	// "http://abadi.me.mtu.edu/wp-content/uploads/2017/12/converted21-1.jpg",
+	// "https://unsplash.com/photos/lQGJCMY5qcM/download?force=true",
+	// "https://unsplash.com/photos/pwcKF7L4-no/download?force=true",
+	// "https://unsplash.com/photos/gKUC4TMhOiY/download?force=true"
+	"back1.jpg",
+	"back2.jpg",
+	"back3.jpg",
+	"back4.jpg",
+	"back5.jpg",
+	"back6.jpg",
+	"back7.jpg"
 ];
 
 let titles: string[] = [
@@ -44,7 +51,7 @@ function cycleBackgroundView(): void {
 	setTimeout(() => {
 
 		if (backgroundImage == null) return;
-		backgroundImage.style.backgroundImage = `url("${imageUrl}")`;
+		backgroundImage.style.backgroundImage = `url("./img/${imageUrl}")`;
 
 		if (titleLabel == null) return;
 		titleLabel.innerText = titles[titleIndex];
