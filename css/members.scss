@@ -1,6 +1,7 @@
 @import "./_global.scss";
 @import "./_nav.scss";
 
+
 main {
 
 	display: flex;
@@ -105,6 +106,23 @@ main {
 
 			}
 
+		}
+
+		.alumni {
+
+			h3 {
+				color: $gold;
+				font-weight: bold;
+				font-size: 1.5em;
+				margin: 20px 0 5px;
+			}
+
+			p {
+
+				font-size: 1.125em;
+				margin-top: 2px;
+
+			}
 		}
 
 	}

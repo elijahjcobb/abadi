@@ -198,6 +198,17 @@ main .container section .member .memberTop .content .contact span {
   font-weight: bold;
   text-decoration: none;
 }
+main .container .alumni h3 {
+  color: #ffcd00;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 20px 0 5px;
+}
+main .container .alumni p {
+  font-size: 1.125em;
+  margin-top: 2px;
+}
+
 @media (min-width: 1080px) {
   main .container {
     width: 60vw;
