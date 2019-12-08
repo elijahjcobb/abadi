@@ -47,8 +47,6 @@ body {
 nav {
   display: flex;
   flex-direction: column;
-  position: sticky;
-  top: 0;
   background: #000000;
   transition: opacity 500ms ease-in-out;
   z-index: 1000000;
@@ -135,6 +133,8 @@ nav ul li .active {
 
 @media (min-width: 1080px) {
   nav {
+    position: sticky;
+    top: 0;
     flex-direction: row;
     height: 20vh;
     align-items: center;

@@ -32,8 +32,9 @@ let titles: string[] = [
 	"Innovation"
 ];
 
-let backgroundImage: HTMLElement | null = document.getElementById("backgroundImage");
-let titleLabel: HTMLElement | null = document.getElementById("subtitleLabel");
+let backgroundImage: HTMLImageElement | null = document.getElementById("header-image") as HTMLImageElement;
+let titleLabel: HTMLElement | null = document.getElementById("header-label");
+let arrow: HTMLElement | null = document.getElementById("arrow");
 
 let imageIndex: number = Math.floor(Math.random() * imageUrls.length) - 1;
 if (imageIndex < 0) imageIndex = 0;
@@ -50,10 +51,12 @@ function cycleBackgroundView(): void {
 	if (titleLabel == null) return;
 	titleLabel.style.opacity = "0";
 
+	if (arrow != null) arrow.style.opacity = "0";
+
 	setTimeout(() => {
 
 		if (backgroundImage == null) return;
-		backgroundImage.style.backgroundImage = `url("./img/${imageUrl}")`;
+		backgroundImage.src = `./img/${imageUrl}`;
 
 		if (titleLabel == null) return;
 		titleLabel.innerText = titles[titleIndex];
@@ -66,13 +69,15 @@ function cycleBackgroundView(): void {
 			if (titleLabel == null) return;
 			titleLabel.style.opacity = "1";
 
+			if (arrow != null) arrow.style.opacity = "1";
+
 			imageIndex++;
 			titleIndex++;
 
 			if (imageIndex >= imageUrls.length) imageIndex = 0;
 			if (titleIndex >= titles.length) titleIndex = 0;
 
-			setTimeout(cycleBackgroundView, 4000);
+			setTimeout(cycleBackgroundView, 6000);
 
 		}, 500);
 
