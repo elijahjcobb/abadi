@@ -20,7 +20,9 @@ let imageUrls = [
     "back4.jpg",
     "back5.jpg",
     "back6.jpg",
-    "back7.jpg"
+    "back7.jpg",
+    "home-afm-magazine.png",
+    "pub2.jpg"
 ];
 let titles = [
     "Cutting Edge",
