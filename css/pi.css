@@ -62,10 +62,10 @@ nav .mtuLogo {
   flex-direction: column;
 }
 nav .mtuLogo img {
-  width: 300px;
+  width: 200px;
   align-self: center;
   justify-self: center;
-  max-height: 200px;
+  max-height: 140px;
   object-fit: contain;
   display: block;
 }

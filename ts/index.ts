@@ -18,29 +18,25 @@ let imageUrls: string[] = [
 	"back2.jpg",
 	"back3.jpg",
 	"back4.jpg",
-	"back5.jpg",
-	"back6.jpg",
-	"back7.jpg",
 	"home-afm-magazine.png",
 	"pub2.jpg"
 ];
 
 let titles: string[] = [
-	"Cutting Edge",
-	"Research",
-	"Discovery",
-	"Innovation"
+	"Our Members",
+	"Cutting Edge Research",
+	"K-12 Education",
+	"Innovation",
+	"Distinguished Publications",
+	"Featured Publications"
 ];
 
-let backgroundImage: HTMLImageElement | null = document.getElementById("header-image") as HTMLImageElement;
+let backgroundImage: HTMLDivElement | null = document.getElementById("header-image") as HTMLImageElement;
 let titleLabel: HTMLElement | null = document.getElementById("header-label");
 let arrow: HTMLElement | null = document.getElementById("arrow");
 
 let imageIndex: number = Math.floor(Math.random() * imageUrls.length) - 1;
 if (imageIndex < 0) imageIndex = 0;
-
-let titleIndex: number = Math.floor(Math.random() * titles.length) - 1;
-if (titleIndex < 0) titleIndex = 0;
 
 function cycleBackgroundView(): void {
 
@@ -56,10 +52,10 @@ function cycleBackgroundView(): void {
 	setTimeout(() => {
 
 		if (backgroundImage == null) return;
-		backgroundImage.src = `./img/${imageUrl}`;
+		backgroundImage.style.backgroundImage = `url('./img/${imageUrl}')`;
 
 		if (titleLabel == null) return;
-		titleLabel.innerText = titles[titleIndex];
+		titleLabel.innerText = titles[imageIndex];
 
 		setTimeout(() => {
 
@@ -72,10 +68,8 @@ function cycleBackgroundView(): void {
 			if (arrow != null) arrow.style.opacity = "1";
 
 			imageIndex++;
-			titleIndex++;
 
 			if (imageIndex >= imageUrls.length) imageIndex = 0;
-			if (titleIndex >= titles.length) titleIndex = 0;
 
 			setTimeout(cycleBackgroundView, 6000);
 

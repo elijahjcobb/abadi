@@ -28,79 +28,69 @@ main {
 
 				margin: 40px 0;
 
-				.memberTop {
+				.profileImg {
 
-					.profileImg {
-
-						width: 40%;
-						max-height: 50vh;
-						object-fit: cover;
-						margin-bottom: 20px;
-
-					}
-
-					.content {
-
-						h3 {
-
-							font-family: $atletico;
-							color: $gold;
-
-						}
-
-						.subtitle {
-
-
-
-						}
-
-						.contactItems {
-
-							display: flex;
-							flex-wrap: wrap;
-							margin: 20px 0;
-
-						}
-
-						.contact {
-
-							display: flex;
-							justify-content: flex-start;
-							align-items: center;
-							text-decoration: none;
-							border: solid $gold 3px;
-							border-radius: 5px;
-							padding: 5px 10px;
-							margin: 10px;
-
-							img {
-
-								display: block;
-								height: 40px;
-								width: 40px;
-
-							}
-
-							span {
-
-								display: block;
-								margin-left: 10px;
-								font-style: normal;
-								color: $gold;
-								font-weight: bold;
-								text-decoration: none;
-
-							}
-
-						}
-
-					}
+					width: 40%;
+					max-height: 50vh;
+					object-fit: cover;
+					margin-bottom: 20px;
 
 				}
 
-				p {
+				.memberContent {
 
 
+					h3 {
+
+						font-family: $atletico;
+						color: $gold;
+
+					}
+
+					.subtitle {
+
+
+
+					}
+
+					.contactItems {
+
+						display: flex;
+						flex-wrap: wrap;
+						margin: 20px 0;
+
+					}
+
+					.contact {
+
+						display: flex;
+						justify-content: flex-start;
+						align-items: center;
+						text-decoration: none;
+						border: solid $gold 3px;
+						border-radius: 5px;
+						padding: 5px 10px;
+						margin: 10px;
+
+						img {
+
+							display: block;
+							height: 40px;
+							width: 40px;
+
+						}
+
+						span {
+
+							display: block;
+							margin-left: 10px;
+							font-style: normal;
+							color: $gold;
+							font-weight: bold;
+							text-decoration: none;
+
+						}
+					}
 
 				}
 
@@ -133,15 +123,16 @@ main {
 
 	main {
 
-
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
 		.container {
 
-			width: 60vw;
+			width: 80vw;
+
 
 			section {
-
-
 
 				h2 {
 
@@ -153,67 +144,66 @@ main {
 				.member {
 
 					margin: 100px 0;
+					display: flex;
 
-					.memberTop {
+					.profileImg {
+						width: 25%;
+					}
 
-						.profileImg {
+					.memberContent {
 
-							width: 30%;
+						width: 75%;
+						margin-left: 20px;
+
+						h3 {
+
+							font-size: 2em;
 
 						}
 
-						.content {
+						.subtitle {
 
-							h3 {
+							font-size: 1.5em;
+							font-weight: bold;
 
-								font-size: 2em;
+						}
+
+						.contactItems {
+
+
+
+						}
+
+						.contact {
+
+
+
+							img {
+
+
 
 							}
 
-							.subtitle {
+							span {
 
-								font-size: 1.5em;
-								font-weight: bold;
-
-							}
-
-							.contactItems {
-
-
-
-							}
-
-							.contact {
-
-
-
-								img {
-
-
-
-								}
-
-								span {
-
-
-								}
-
-							}
-
-							a.contact {
-
-								transition: transform 250ms ease-in-out;
-								cursor: pointer;
-
-							}
-
-							a.contact:hover {
-
-								transform: scale(1.1);
 
 							}
 
 						}
+
+						a.contact {
+
+							transition: transform 250ms ease-in-out;
+							cursor: pointer;
+
+						}
+
+						a.contact:hover {
+
+							transform: scale(1.1);
+
+						}
+
 
 					}
 

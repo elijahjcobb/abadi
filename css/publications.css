@@ -62,10 +62,10 @@ nav .mtuLogo {
   flex-direction: column;
 }
 nav .mtuLogo img {
-  width: 300px;
+  width: 200px;
   align-self: center;
   justify-self: center;
-  max-height: 200px;
+  max-height: 140px;
   object-fit: contain;
   display: block;
 }
@@ -164,6 +164,8 @@ main .container section article {
 main .container section article .paperImg {
   object-fit: contain;
   display: block;
+  max-height: 300px;
+  max-width: 300px;
 }
 main .container section article .left {
   margin: 10px 0;
@@ -192,6 +194,11 @@ main .container section article .link {
 }
 
 @media (min-width: 1080px) {
+  .paperImg {
+    max-width: 600px;
+    max-height: 600px;
+  }
+
   main .container {
     width: 90vw;
   }

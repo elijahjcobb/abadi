@@ -62,10 +62,10 @@ nav .mtuLogo {
   flex-direction: column;
 }
 nav .mtuLogo img {
-  width: 300px;
+  width: 200px;
   align-self: center;
   justify-self: center;
-  max-height: 200px;
+  max-height: 140px;
   object-fit: contain;
   display: block;
 }
@@ -145,6 +145,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+main h1 {
+  font-family: Atletico;
+  font-size: 4em;
+  font-weight: bold;
+  color: #ffcd00;
 }
 main .container {
   width: 80vw;

@@ -62,10 +62,10 @@ nav .mtuLogo {
   flex-direction: column;
 }
 nav .mtuLogo img {
-  width: 300px;
+  width: 200px;
   align-self: center;
   justify-self: center;
-  max-height: 200px;
+  max-height: 140px;
   object-fit: contain;
   display: block;
 }
@@ -148,6 +148,14 @@ main {
 }
 main .container {
   width: 80vw;
+}
+main .container .topCategoryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .container .topCategoryContainer .topImage {
+  margin: 40px;
 }
 main .container section {
   margin: 40px 0;

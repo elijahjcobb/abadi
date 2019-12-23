@@ -31,6 +31,8 @@ main {
 				.paperImg {
 					object-fit: contain;
 					display: block;
+					max-height: 300px;
+					max-width: 300px;
 				}
 
 				.left {
@@ -79,6 +81,11 @@ main {
 }
 
 @media (min-width: 1080px) {
+
+	.paperImg {
+		max-width: 600px;
+		max-height: 600px;
+	}
 
 	main {
 

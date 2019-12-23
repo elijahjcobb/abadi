@@ -62,10 +62,10 @@ nav .mtuLogo {
   flex-direction: column;
 }
 nav .mtuLogo img {
-  width: 300px;
+  width: 200px;
   align-self: center;
   justify-self: center;
-  max-height: 200px;
+  max-height: 140px;
   object-fit: contain;
   display: block;
 }
@@ -144,75 +144,56 @@ nav ul li .active {
 body {
   scroll-behavior: smooth;
 }
-body header {
+body #header-image, body #header-label, body #arrow {
+  transition: opacity 500ms ease-in-out;
+  opacity: 0;
+}
+body #header-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-body header .header-content {
-  height: 30vh;
-}
-body header .header-content #header-label {
-  display: none;
-  transition: opacity 500ms ease-in;
-  opacity: 0;
-}
-body header .header-content #header-image {
-  opacity: 0;
-  height: 100%;
+body #header-image .header-content {
   width: 100%;
-  object-fit: cover;
-  object-position: center;
-  transition: opacity 500ms ease-in;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-body header #arrow {
+body #header-image .header-content #header-label {
+  font-weight: bold;
+  font-family: Atletico;
+  color: #ffcd00;
+  border-bottom: solid #ffcd00 3px;
+  font-size: 2em;
+}
+body #header-image .header-content #arrow {
   display: none;
 }
 @media (min-width: 1080px) {
-  body header {
-    display: block;
-  }
-  body header .header-content {
+  body #header-image {
     height: 80vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
   }
-  body header .header-content #header-left-content {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100%;
-    margin-left: 60px;
+  body #header-image .header-content #header-label {
+    font-size: 4em;
+    border-bottom: none;
   }
-  body header .header-content #header-left-content #header-label {
+  body #header-image .header-content #arrow {
     display: block;
-    color: #ffcd00;
-    font-family: Atletico;
-    font-size: 3em;
-    width: 100%;
-    margin-top: 80px;
-    padding: 20px;
-    border-left: #ffcd00 5px solid;
+    position: absolute;
+    top: 90vh;
+    width: 80px;
+    transition: transform 250ms ease-in-out;
   }
-  body header .header-content #header-left-content #arrow {
-    display: block;
-    width: 60px;
-    margin-left: 100px;
-    margin-top: 40px;
-    transition: all 500ms ease-in;
-    opacity: 0;
-  }
-  body header .header-content #header-left-content #arrow:hover {
+  body #header-image .header-content #arrow:hover {
     transform: scale(1.1);
-  }
-  body header .header-content #header-image {
-    display: block;
-    height: 100%;
-    width: 60%;
-    object-fit: contain;
-    object-position: center;
   }
 }
 body #wogrammer-container {
@@ -248,7 +229,7 @@ body main section article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 80px 0 80px 20px;
+  margin: 140px 0 100px 20px;
 }
 body main section article img {
   width: 60vw;
@@ -271,7 +252,6 @@ body main section article p {
   body main section p {
     margin-top: 20px;
     font-size: 1.25em;
-    text-align: justify;
   }
   body main section article {
     display: grid;
@@ -286,7 +266,6 @@ body main section article p {
   body main section article p {
     margin-top: 0;
     grid-column: 3;
-    text-align: justify;
   }
 }
 body main .projects ul {
@@ -326,6 +305,11 @@ body main .projects ul li a span {
     margin-top: 10px;
     letter-spacing: 1.125px;
     line-height: 1.5;
+  }
+}
+
+@media (min-width: 1400px) {
+  span, p {
     text-align: justify;
   }
 }

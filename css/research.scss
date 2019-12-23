@@ -9,7 +9,19 @@ main {
 
 	.container {
 
+
 		width: 80vw;
+
+		.topCategoryContainer {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.topImage {
+				margin: 40px;
+			}
+
+		}
 
 		section {
 

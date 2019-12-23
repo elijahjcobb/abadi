@@ -18,17 +18,16 @@ let imageUrls = [
     "back2.jpg",
     "back3.jpg",
     "back4.jpg",
-    "back5.jpg",
-    "back6.jpg",
-    "back7.jpg",
     "home-afm-magazine.png",
     "pub2.jpg"
 ];
 let titles = [
-    "Cutting Edge",
-    "Research",
-    "Discovery",
-    "Innovation"
+    "Our Members",
+    "Cutting Edge Research",
+    "K-12 Education",
+    "Innovation",
+    "Distinguished Publications",
+    "Featured Publications"
 ];
 let backgroundImage = document.getElementById("header-image");
 let titleLabel = document.getElementById("header-label");
@@ -36,9 +35,6 @@ let arrow = document.getElementById("arrow");
 let imageIndex = Math.floor(Math.random() * imageUrls.length) - 1;
 if (imageIndex < 0)
     imageIndex = 0;
-let titleIndex = Math.floor(Math.random() * titles.length) - 1;
-if (titleIndex < 0)
-    titleIndex = 0;
 function cycleBackgroundView() {
     const imageUrl = imageUrls[imageIndex];
     if (backgroundImage == null)
@@ -52,10 +48,10 @@ function cycleBackgroundView() {
     setTimeout(() => {
         if (backgroundImage == null)
             return;
-        backgroundImage.src = `./img/${imageUrl}`;
+        backgroundImage.style.backgroundImage = `url('./img/${imageUrl}')`;
         if (titleLabel == null)
             return;
-        titleLabel.innerText = titles[titleIndex];
+        titleLabel.innerText = titles[imageIndex];
         setTimeout(() => {
             if (backgroundImage == null)
                 return;
@@ -66,11 +62,8 @@ function cycleBackgroundView() {
             if (arrow != null)
                 arrow.style.opacity = "1";
             imageIndex++;
-            titleIndex++;
             if (imageIndex >= imageUrls.length)
                 imageIndex = 0;
-            if (titleIndex >= titles.length)
-                titleIndex = 0;
             setTimeout(cycleBackgroundView, 6000);
         }, 500);
     }, 500);

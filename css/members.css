@@ -62,10 +62,10 @@ nav .mtuLogo {
   flex-direction: column;
 }
 nav .mtuLogo img {
-  width: 300px;
+  width: 200px;
   align-self: center;
   justify-self: center;
-  max-height: 200px;
+  max-height: 140px;
   object-fit: contain;
   display: block;
 }
@@ -160,22 +160,22 @@ main .container section h2 {
 main .container section .member {
   margin: 40px 0;
 }
-main .container section .member .memberTop .profileImg {
+main .container section .member .profileImg {
   width: 40%;
   max-height: 50vh;
   object-fit: cover;
   margin-bottom: 20px;
 }
-main .container section .member .memberTop .content h3 {
+main .container section .member .memberContent h3 {
   font-family: Atletico;
   color: #ffcd00;
 }
-main .container section .member .memberTop .content .contactItems {
+main .container section .member .memberContent .contactItems {
   display: flex;
   flex-wrap: wrap;
   margin: 20px 0;
 }
-main .container section .member .memberTop .content .contact {
+main .container section .member .memberContent .contact {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -185,12 +185,12 @@ main .container section .member .memberTop .content .contact {
   padding: 5px 10px;
   margin: 10px;
 }
-main .container section .member .memberTop .content .contact img {
+main .container section .member .memberContent .contact img {
   display: block;
   height: 40px;
   width: 40px;
 }
-main .container section .member .memberTop .content .contact span {
+main .container section .member .memberContent .contact span {
   display: block;
   margin-left: 10px;
   font-style: normal;
@@ -210,30 +210,40 @@ main .container .alumni p {
 }
 
 @media (min-width: 1080px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   main .container {
-    width: 60vw;
+    width: 80vw;
   }
   main .container section h2 {
     font-size: 3em;
   }
   main .container section .member {
     margin: 100px 0;
+    display: flex;
   }
-  main .container section .member .memberTop .profileImg {
-    width: 30%;
+  main .container section .member .profileImg {
+    width: 25%;
   }
-  main .container section .member .memberTop .content h3 {
+  main .container section .member .memberContent {
+    width: 75%;
+    margin-left: 20px;
+  }
+  main .container section .member .memberContent h3 {
     font-size: 2em;
   }
-  main .container section .member .memberTop .content .subtitle {
+  main .container section .member .memberContent .subtitle {
     font-size: 1.5em;
     font-weight: bold;
   }
-  main .container section .member .memberTop .content a.contact {
+  main .container section .member .memberContent a.contact {
     transition: transform 250ms ease-in-out;
     cursor: pointer;
   }
-  main .container section .member .memberTop .content a.contact:hover {
+  main .container section .member .memberContent a.contact:hover {
     transform: scale(1.1);
   }
   main .container section .member p {

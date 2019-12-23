@@ -7,6 +7,13 @@ main {
 	flex-direction: column;
 	align-items: center;
 
+	h1 {
+		font-family: $atletico;
+		font-size: 4em;
+		font-weight: bold;
+		color: $gold;
+	}
+
 	.container {
 
 		width: 80vw;
