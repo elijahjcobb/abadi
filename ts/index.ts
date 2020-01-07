@@ -18,7 +18,7 @@ let imageUrls: string[] = [
 	"back2.jpg",
 	"back3.jpg",
 	"back4.jpg",
-	"home-afm-magazine.png",
+	"pub1.png",
 	"pub2.jpg"
 ];
 
@@ -26,8 +26,8 @@ let titles: string[] = [
 	"Our Members",
 	"Cutting Edge Research",
 	"K-12 Education",
-	"Innovation",
-	"Distinguished Publications",
+	"Undergraduate Research",
+	"Featured Publications",
 	"Featured Publications"
 ];
 
@@ -53,6 +53,9 @@ function cycleBackgroundView(): void {
 
 		if (backgroundImage == null) return;
 		backgroundImage.style.backgroundImage = `url('./img/${imageUrl}')`;
+
+		if (imageUrl == "pub1.png" || imageUrl == "pub2.jpg") backgroundImage.style.backgroundSize = "contain";
+		else backgroundImage.style.backgroundSize = "cover";
 
 		if (titleLabel == null) return;
 		titleLabel.innerText = titles[imageIndex];
