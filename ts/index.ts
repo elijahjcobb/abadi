@@ -24,11 +24,11 @@ let imageUrls: string[] = [
 
 let titles: string[] = [
 	"Our Members",
-	"Cutting Edge Research",
+	"Undergraduate Student Education",
 	"K-12 Education",
-	"Undergraduate Research",
+	"Student-centered Research",
 	"Featured Publications",
-	"Featured Publications"
+	"Cutting-edge Research"
 ];
 
 let backgroundImage: HTMLDivElement | null = document.getElementById("header-image") as HTMLImageElement;

@@ -23,11 +23,11 @@ let imageUrls = [
 ];
 let titles = [
     "Our Members",
-    "Cutting Edge Research",
+    "Undergraduate Student Education",
     "K-12 Education",
-    "Undergraduate Research",
+    "Student-centered Research",
     "Featured Publications",
-    "Featured Publications"
+    "Cutting-edge Research"
 ];
 let backgroundImage = document.getElementById("header-image");
 let titleLabel = document.getElementById("header-label");
